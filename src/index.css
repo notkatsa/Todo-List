@@ -1,0 +1,35 @@
+.content {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+}
+
+.header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+div.add-task-popup {
+    visibility: hidden;
+}
+div.add-project-popup {
+        visibility: hidden;
+}
+div.add-task-popup.active {
+    visibility:visible;
+}
+
+div.add-project-popup.active {
+    visibility: visible;
+}
