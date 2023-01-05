@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .content {
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
+    background-color: #c5d3eb;
+    font-family: 'Roboto';
 }
 
 .header {
     grid-column: 1/4;
     grid-row: 1/2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .sidebar {
@@ -32,4 +38,37 @@ div.add-task-popup.active {
 
 div.add-project-popup.active {
     visibility: visible;
+}
+
+#add-todo {
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 3pc;
+    border-radius: 2pc;
+    background-color: #4c84e6;
+
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: medium;
+    border-radius: 0.3pc;
+    background-color: #4c84e6;
+    padding: 0.3pc;
+
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/4;
+}
+#todos  > div {
+    background-color: rgb(96, 98, 102, 0.7);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

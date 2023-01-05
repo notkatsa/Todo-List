@@ -19,4 +19,11 @@ function rmTodo(pr, td) {
     pr.removeTodo(td);
 }
 
-export {createProject, createTodo,addTodoToProject,rmTodo};
+function findTodo(pr, tdn) {
+    for (var it = pr.todoList.values(), val= null; val=it.next().value; ) {
+        if (val.getName() == tdn) {
+            return val;
+        }
+    }
+}
+export {createProject, createTodo,addTodoToProject,rmTodo, findTodo};

@@ -12,5 +12,4 @@ class project {
         this.todoList.delete(todo);
     }
 }
-
 export {project};
